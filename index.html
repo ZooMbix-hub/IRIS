@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script defer src="scripts/simple-adaptive-slider.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // инициализация слайдера
+          var slider = new SimpleAdaptiveSlider('.slider', {
+            loop: true,
+            autoplay: false,
+            swipe: true
+          });
+        });
+    </script>
+
+<style>
+    @media screen and (max-width:569px) {
+        /* стили для элемента body */
+        /* дополнительные стили для этого примера */
+        .slider__items {
+        counter-reset: slide;
+        }
+
+        .slider__item {
+        counter-increment: slide;
+        }
+
+        .slider__item>div::before {
+        content: counter(slide);
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #fff;
+        font-style: italic;
+        font-size: 32px;
+        font-weight: bold;
+        }
+    }
+  </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/business-color_money-growth_icon-icons.com_53445.png" type="image/x-icon"> 
+
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/main_2.css">
+    <link rel="stylesheet" href="style/main_3.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/adaptive.css">
+    <link rel="stylesheet" href="style/simple-adaptive-slider.min.css">
+
+    <title>IRIS</title>
+</head>
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header__logo">
+                <img src="img/Group.png" alt="">
+            </div>
+            <div class="header__menu">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Касса</a></li>
+                    <li><a href="">Сценарии</a></li>
+                </ul>
+                <div class="header__contact">
+                    <p>8 (800) 550-04-79</p>
+                    <button>Обратный звонок</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container__main">
+            <div class="block">
+                <p class="block__title">Мечта предпринимателя</p>
+                <div class="block__content">
+                    <div class="content__left">
+                        <p class="content__title">Твой рост, наша цель!</p>
+                        <hr>
+                        <p class="content">То, что раньше было у крупного бизнеса, теперь доступно тебе</p>
+                    </div>
+                    <div class="content__right">
+                        <img src="img/Frame 512872.png" alt="">
+                        <img src="img/Vector.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="block__2">
+                <p class="block__title center__title">С нами все просто</p>
+                <div class="block__content">
+                    <div class="content__left">
+                        <p class="content__title not__margin">Лучшее решение для роста вашего бизнеса</p>
+                        <hr>
+                        <p class="content">ИРИС Ритейл взял лучших на рынке провайдеров технологий, которые способны обеспечить реальный рост выручки малого или среднего предпринимателя-ритейлера</p>
+                    </div>
+                    <div class="content__right__2">
+                        <img src="img/Frame 513009.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Блок карточек бизнеса -->
+            <div class="container__card">
+                <div class="card">
+                    <div class="logo__card">
+                        <img src="img/logo__card.png" alt="">
+                    </div>
+                    <div class="content__card">
+                        <p class="title__card">Сценарии <br> «Бизнес роста»</p>
+                        <hr>
+                        <p class="text__card">Выбери сценарий — получи рост на 30% и более</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo__card">
+                        <img src="img/logo__card__2.png" alt="">
+                    </div>
+                    <div class="content__card">
+                        <p class="title__card">Наше ПО</p>
+                        <hr>
+                        <p class="text__card">Проверим вашу ККТ на совместимость с нашим ПО</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo__card">
+                        <img src="img/logo__card__3.png" alt="">
+                    </div>
+                    <div class="content__card">
+                        <p class="title__card">Обучение</p>
+                        <hr>
+                        <p class="text__card">20 лет работы и экспертизы в  розничном бизнесе</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="logo__card">
+                        <img src="img/logo__card__4.png" alt="">
+                    </div>
+                    <div class="content__card">
+                        <p class="title__card">Решение из коробки</p>
+                        <hr>
+                        <p class="text__card">Достань, подключи, работай</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Слайдер №1 -->
+            <!-- Блок слайдер сфер бизнеса (слайдер для мобайл) -->
+            <p class="container__shop__title">Выбери сферу своего бизнеса</p>
+            <div class="slider">
+                <div class="slider__wrapper">
+                    <div class="container__shop slider__items">
+            
+                        <div class="slider__item item__shop">
+                            <p class="title__shop">Торговля продуктами</p>
+                            <div class="content__shop">
+                                <div class="item__left">
+                                    <button><img src="../IRIS/img/Polygon 3.png" alt=""></button>
+                                </div>
+                                <div class="item__right">
+                                    <img src="../IRIS/img/undraw_shopping_app_flsj.png" alt="" id="front_1">
+                                    <img src="../IRIS/img/back__item.png" alt="" class="back__item">                       
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="slider__item item__shop">
+                            <p class="title__shop">Торговля продуктами</p>
+                            <div class="content__shop">
+                                <div class="item__left">
+                                    <button><img src="../IRIS/img/Polygon 3.png" alt=""></button>
+                                </div>
+                                <div class="item__right">
+                                    <img src="../IRIS/img/Frame 512999.png" alt="" id="front_2">
+                                    <img src="../IRIS/img/back__item.png" alt="" class="back__item">                       
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="slider__item item__shop">
+                            <p class="title__shop">Торговля продуктами</p>
+                            <div class="content__shop">
+                                <div class="item__left">
+                                    <button><img src="../IRIS/img/Polygon 3.png" alt=""></button>
+                                </div>
+                                <div class="item__right">
+                                    <img src="../IRIS/img/undraw_gone_shopping_vwmc.png" alt="" id="front_3">
+                                    <img src="../IRIS/img/back__item.png" alt="" class="back__item">                       
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="slider__item item__shop last__item" >
+                            <p class="title__shop">Торговля продуктами</p>
+                            <div class="content__shop">
+                                <div class="item__left">
+                                    <button><img src="../IRIS/img/Polygon 3.png" alt=""></button>
+                                </div>
+                                <div class="item__right">
+                                    <img src="../IRIS/img/Frame 512997.png" alt="" id="front_4">
+                                    <img src="../IRIS/img/back__item.png" alt="" class="back__item">                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+                <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+            </div>
+
+
+
+            <!--Табы блока "Сценарии роста бизнеса "-->
+            <div class="container__business">
+                <p class="title__tabs">Сценарии роста бизнеса</p>
+                <div class="tabs">
+                    <div class="tabs__nav">
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Рост доходов</button>
+                        <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Снижение расходов</button>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__item" id="tab_1">
+                            <p class="tabs__text">Мы даём вам инструменты, которые позволят повысить ваш доход и выйти на новый уровень прибыли</p>
+                        </div>
+                        <div class="tabs__item" id="tab_2">
+                            <p class="tabs__text">В макете в этом блоке было пусто, поэтому здесь будет анекдот.<p class="margin-top">– Батюшка! Вы что пить будете, вино или водку?<br>– И пиво, сын мой, и пиво!…</p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- Слайдер №2 -->
+            <div class="container__slider">
+                <div class="slider_2">
+                    <div class="slider-line">
+                        <!-- slider_1 -->
+                        <div class="slider_2">
+                            <div class="content__slider">
+                                <div class="content__slider__top">
+                                    <div class="content__slider__left">
+                                        <p class="title__slider">Интерактивное обучение</p>
+                                        <hr>
+                                        <p class="text__slider">Создаём диалоговые симуляции без навыков программирования. Организуем обучения в виртуальной и дополненой реальности. Обучение можно проходить на смартфоне, компьютере или VR-очках</p>
+                                        <button class="btn">Заказать</button>
+                                    </div>
+                                    <div class="content__slider__right">
+                                        <img class="logo__slider" src="img/undraw_active_support_6rwo.png" alt="">
+                                        <img class="circle__slider" src="img/circle_slider.png" alt="">
+                                        <p class="text__logo">Доход<br><span>+15%</span></p>
+                                    </div>
+                                </div>
+    
+                                <div class="content__slider__bottom">
+                                    <div class="content__slider__left__bottom">
+                                        <img class="logo__slider__bottom" src="img/undraw_two_factor_authentication_namy 1.png" alt="">
+                                        <img class="circle__slider__bottom" src="img/circle_slider.png" alt="">
+                                        <p class="text__logo">Доход<br><span>+25%</span></p>
+    
+                                    </div>
+                                    <div class="content__slider__right__bottom">
+                                        <p class="title__slider">Автоматические предзаказы</p>
+                                        <hr>
+                                        <p class="text__slider">Анализируем наполненость полки, распознаем товары и проверяем выкладку и ассортимент. Контролируем работу кассира, фиксируем ошибки и нарушения в процессе его работы</p>
+                                        <button class="btn">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- slider_2 -->
+                        <div class="slider_2">
+                            <div class="content__slider">
+                                <div class="content__slider__top">
+                                    <div class="content__slider__left">
+                                        <p class="title__slider">Видео аналитика</p>
+                                        <hr>
+                                        <p class="text__slider">Создаём автозаказы, предоставляем аналитику в виде отчётов и дашбордов</p>
+                                        <button class="btn">Заказать</button>
+                                    </div>
+                                    <div class="content__slider__right">
+                                        <img class="logo__slider" src="img/Frame 512986.png" alt="">
+                                        <img class="circle__slider" src="img/circle_slider.png" alt="">
+                                        <p class="text__logo">Доход<br><span>+13%</span></p>
+                                    </div>
+                                </div>
+    
+                                <div class="content__slider__bottom">
+                                    <div class="content__slider__left__bottom">
+                                        <img class="logo__slider__bottom" src="img/undraw_google_analytics_a57d 1.png" alt="">
+                                        <img class="circle__slider__bottom" src="img/circle_slider.png" alt="">
+                                        <p class="text__logo">Доход<br><span>+35%</span></p>
+    
+                                    </div>
+                                    <div class="content__slider__right__bottom">
+                                        <p class="title__slider">Оценка эффективности рекламы</p>
+                                        <hr>
+                                        <p class="text__slider">Анализируем полки, распознаем товары и проверяем выкладку и ассортимент. Контролируем работу кассира, фиксируем ошибки и нарушения в процессе его работы</p>
+                                        <button class="btn">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button slider-next"><img src="img/slider-next.png" alt=""></button>
+                <button class="button slider-prev"><img src="img/slider-prev.png" alt=""></button>
+            </div>
+            
+            <!-- Табы блока "Наши касса" -->
+            <div class="container__cashRegist">
+                <p class="title__tabs">Наши касса</p>
+                <div class="tabs_2">
+                    <div class="tabs_2__nav">
+                        <button class="tabs_2__nav-btn" type="button" data-tab="#tab_3">О кассе</button>
+                        <button class="tabs_2__nav-btn" type="button" data-tab="#tab_4">Видео</button>
+                        <button class="tabs_2__nav-btn" type="button" data-tab="#tab_5">Характеристики</button>
+                    </div>
+                    <div class="tabs_2__content">
+
+                        <!-- Таб раздел "О кассе" -->
+                        <div class="tabs_2__item" id="tab_3">
+                           <!-- <p class="content__title__tabs_2">Создаём диалоговые симуляции без навыков программирования. Организуем обучения в виртуальной и дополненой реальности. Обучение можно проходить на смартфоне, компьютере или VR-очках</p> -->
+                            
+                            <p class="title__item">НЕВА — 01 — Ф</p>
+                            
+                            <div class="content__tabs_2">
+                                <div class="tabs_2__item__left">
+                                    <p class="title__tems__item">Идеальное решение для малого бизнеса</p>
+                                    <hr>
+                                    <p class="text__item">Устройство работает на базе Android, оснащена семидюймовым сенсорным экраном, портами USB, Ethernet и сетевыми проотколами GPRS, Wi-Fi, Bluetooth</p>
+                                    <p class="text__item">Кассовое ядро позволяет интегрировать с ККТ Нева — 01 — Ф любые сторонние приложения</p>
+                                    <button class="btn">Заказать</button>
+                                </div>
+                                <div class="tabs_2__item__right">
+                                    <img src="img/green__back__slider_2.png" alt="" id="green__back__slider_2">
+                                    <img src="img/white__back__slider_2.png" alt="" id="white__back__slider_2">
+                                    <img src="img/logo__slider_2.png" alt="" id="logo__slider_2">
+                                    <p class="price">от 3 650 ₽</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Таб раздел "Видео" -->
+                        <div class="tabs_2__item" id="tab_4">
+                           <p class="margin-top">В макете данного блока также не было контента, поэтому здесь будет ещё один <span>смешной</span> анекдот</p>
+                           <p class="margin-top">– Я просил Вас настроить фортепьяно, а не целовать мою жену!<br>– Пардон, но она была такая расстроенная.</p>
+                        </div>
+
+                        <!-- Таб раздел-таблица "Характеристики" -->
+                        <div class="tabs_2__item" id="tab_5">
+                            <p class="title__specific">Технические характеристики устройства</p>
+                            <table>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Операционная система</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>Android</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Процессор</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>MediaTek 6580</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Оперативная память</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>1 Гб</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Постоянная память</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>8 Гб</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="point_1"> 
+                                        <div class="td__left">
+                                            <span>Протоколы связи</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>2 х USB(хост),1 х MicroUSB, 1 х RJ45, Bluetooth</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Экран</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>7 дюймов, TFT 600 х 1024</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Аккумулятор</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>Li-on, 7.4 V, 2500 мАЧ</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Размеры</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>250 х 120 х 65</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Вес</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>740 г</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Ширина чековой ленты</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>58 мм</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="point_1"> 
+                                        <div class="td__left">
+                                            <span>Доступные приложения</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>Бифит касса, Лайтбокс, Умка 365 Торговля онлайн</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Скорость печати</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>18 строк/сёк</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Гарантия</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>1 год</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="point_1"> 
+                                        <div class="td__left">
+                                            <span>Подключаемая переферия</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>Банковский терминал, сканер штрих — кодов,
+                                                весы</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td> 
+                                        <div class="td__left">
+                                            <span>Время работы на дном заряде</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="td__right">
+                                            <span>16 ч</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Табы блока "Выбери то, что нужно тебе" -->
+            <div class="container__calc">
+                <p class="title__tabs">Выбери то, что нужно тебе</p>
+                <div class="tabs_3">
+                    <div class="tabs_3__nav">
+                        <button class="tabs_3__nav-btn" type="button" data-tab="#tab_6">Купить</button>
+                        <button class="tabs_3__nav-btn" type="button" data-tab="#tab_7">Аренда</button>
+                        <button class="tabs_3__nav-btn" type="button" data-tab="#tab_8">Наше ПО</button>
+                    </div>
+                    <div class="tabs_3__content">
+                        <div class="tabs_3__item" id="tab_6">
+                            <p class="tabs__text">Выбери решение, которое максимально подходит твоему бизнесу, и посмотри прогнозируемый рост выручки</p>
+
+                            <div class="tabs_3__block">
+                                <div class="tabs_3__block__left">
+                                    <div class="tabs_3__content__selects">
+                                        <p class="label__tabs">ККТ</p>
+                                        <select name="select" class="select__border">
+                                            <option selected value="s1">НЕВА — 01 — Ф</option>
+                                            <option value="s2">НЕВА — 02 — A</option>
+                                            <option value="s3">НЕВА — 03 — L</option>
+                                        </select>
+                                    </div>
+                                    <button class="add__select">Добавить сценарий</button>
+
+                                    <p class="label__tabs margin-top">Текущая выручка</p>
+                                    <div class="container__progressBar">
+                                        <p><input type="text" id="demo" value="240000"> руб/мес</p>
+                                        <input type="range" min="1" max="1000000" value="240000" class="slider__progressBar" id="myRange">
+                                    </div>
+                                </div>
+                                <div class="tabs_3__block__right">
+                                    <p class="text__forecast">Прогнозируемый рост выручки</p>
+                                    <p class="text__cost">25 000 руб/мес</p>
+                                    <hr>
+                                    <p class="text__total">Итого</p>
+                                    <p class="text__expenses">Расходы на СРБ</p>
+                                    <p class="text__cost">650 руб/мес</p>
+                                    <p class="text__expenses">ККТ</p>
+                                    <p class="text__cost">3650 руб</p>
+                                    <button type="button" class="model application">Оставить заявку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs_3__item" id="tab_7">
+                            <p class="tabs__text">Выбери решение, которое максимально подходит твоему бизнесу, и посмотри прогнозируемый рост выручки</p>
+
+                            <div class="tabs_3__block">
+                                <div class="tabs_3__block__left">
+                                    <div class="tabs_3__content__selects">
+                                        <p class="label__tabs">ККТ</p>
+                                        <select name="select" class="select__border">
+                                            <option selected value="s1">НЕВА — 01 — Ф</option>
+                                            <option value="s2">НЕВА — 02 — A</option>
+                                            <option value="s3">НЕВА — 03 — L</option>
+                                        </select>
+                                    </div>
+                                    <button class="add__select">Добавить сценарий</button>
+
+                                    <p class="label__tabs margin-top">Текущая выручка</p>
+                                    <div class="container__progressBar">
+                                        <p><input type="text" id="demo" value="240000"> руб/мес</p>
+                                        <input type="range" min="1" max="1000000" value="240000" class="slider__progressBar" id="myRange">
+                                    </div>
+                                </div>
+                                <div class="tabs_3__block__right">
+                                    <p class="text__forecast">Прогнозируемый рост выручки</p>
+                                    <p class="text__cost">25 000 руб/мес</p>
+                                    <hr>
+                                    <p class="text__total">Итого</p>
+                                    <p class="text__expenses">Расходы на СРБ</p>
+                                    <p class="text__cost">650 руб/мес</p>
+                                    <p class="text__expenses">ККТ</p>
+                                    <p class="text__cost">3650 руб</p>
+                                    <button type="button" class="model application">Оставить заявку</button>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="tabs_3__item" id="tab_8">
+                            <p class="tabs__text">Проверим ваше ККТ на совместимость с нашим ПО</p>
+
+                            <div class="tabs_3__block">
+                                <div class="tabs_3__block__left">
+                                    <div class="tabs_3__content__selects">
+                                        <p class="label__tabs">ККТ</p>
+                                        <select name="select" class="select__border">
+                                            <option selected value="s1">НЕВА — 01 — Ф</option>
+                                            <option value="s2">НЕВА — 02 — A</option>
+                                            <option value="s3">НЕВА — 03 — L</option>
+                                        </select>
+                                    </div>
+                                    <button class="add__select">Добавить сценарий</button>
+
+                                    <p class="label__tabs margin-top">Текущая выручка</p>
+                                    <div class="container__progressBar">
+                                        <p><input type="text" id="demo" value="240000"> руб/мес</p>
+                                        <input type="range" min="1" max="1000000" value="240000" class="slider__progressBar" id="myRange">
+                                    </div>
+                                </div>
+                                <div class="tabs_3__block__right">
+                                    <p class="text__forecast">Прогнозируемый рост выручки</p>
+                                    <p class="text__cost">25 000 руб/мес</p>
+                                    <hr>
+                                    <p class="text__total">Итого</p>
+                                    <p class="text__expenses">Расходы на СРБ</p>
+                                    <p class="text__cost">650 руб/мес</p>
+                                    <p class="text__expenses">Наше ПО</p>
+                                    <p class="text__cost">0 руб</p>
+                                    <button type="button" class="model application">Оставить заявку</button>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </main>
+    <footer>
+        <div class="container__footer">
+            <div class="top__container__footer">
+                <div class="top__container__left">
+                    <p>Оставьте заявку, и мы свяжемся с вами в течение 24 часов</p>
+                    <img src="img/logo__footer.png" alt="">
+                </div>
+                <div class="top__container__right">
+                    <form action="">
+                        <p>Город</p>
+                        <input type="text" name="city" placeholder="Москва" class="application__input">
+                        <p>Имя</p>
+                        <input type="text" name="name" placeholder="Иванов Иван Иванович" class="application__input">
+                        <p>Телефон</p>
+                        <input type="number" name="number" placeholder="+7" class="application__input">
+                        <div class="block__check__konf"> 
+                            <input type="checkbox" name="konf" id="check__konf">
+                            <label for="check__konf" id="gg"></label>
+                            <a href="">Я согласен с условиями сбора 
+                                и обработки персональных данных</a>
+                        </div>
+                        <button type="button" class="model">Оставить заявку</button>
+                        <img src="img_mobile/Group.png" alt="" id="logo__footer__mobile">
+                    </form>
+                </div>
+            </div>
+            <div class="bottom__container__footer">
+                <div class="bottom__container__top">
+                    <div class="bottom__container__top__block">
+                        <p>Заказать</p>
+                        <p class="mail">iris-retail@iris.ru</p>
+                        <hr>
+                    </div>
+                    <div class="bottom__container__top__block">
+                        <p>Наши контакты</p>
+                        <p class="mail">8 (800) 550-04-79</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="bottom__container__bottom">
+                    <p>Лигал, который занимает два или три предложения. Будет находиться здесь, в конце футера. Тут будет прописана юридическая информация, чтобы с точки зрени закона все было ок %)</p>
+                </div>
+            </div>
+            <div class="popup-bg">
+                <div class="popup">
+                    <img class="close-popup" src="img/close__popup.png" alt="">
+                    <p class="title__popup">Заявка</p>
+                    <form action="£" method="post">
+                        <p class="label__popup">Город</p>
+                        <input type="text" name="city" placeholder="Москва" class="application__input">
+                        <p class="label__popup">Имя</p>
+                        <input type="text" name="name" placeholder="Иванов Иван Иванович" class="application__input">
+                        <p class="label__popup">Телефон</p>
+                        <input type="number" name="number" placeholder="+7" class="application__input">
+                        <div class="block__check__konf__model"> 
+                            <input type="checkbox" name="konf__model" id="check__konf__model" value="konf">
+                            <label for="check__konf__model" id="gg__model"></label>
+                            <a href="">Я согласен с условиями сбора 
+                                и обработки персональных данных</a>
+                        </div>
+                        <input value="Оставить заявку" type="submit" class="model">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-author">
+        <p>© 2021 IRIS. Designed by ZooMbix DD</p>
+    </div>
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

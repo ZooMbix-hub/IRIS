@@ -1,0 +1,313 @@
+main {
+    display: flex;
+    justify-content: center;
+
+    background-color: #f9f9f9;
+
+   padding-bottom: 130px;
+}
+
+.container__main {
+    width: 85%;
+
+    margin-top: 54px;
+}
+
+.block {
+    margin-bottom: 50px;
+}
+
+.block__title {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    color: #000000;
+}
+
+.block__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__left {
+    width: 50%;
+}
+
+.content__left hr {
+    background-color: #B4ABAB;
+    border: 3px solid #B4ABAB;
+
+    width: 32%;
+    margin: 20px 0;
+}
+
+.content__title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #000000;
+
+    margin-top: 100px;
+}
+
+.content {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #000000;
+}
+
+.content__right {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-end;
+
+    width: 50%;
+
+}
+
+.content__right img{
+    max-width: 100%;
+    height: auto; 
+     
+}
+
+.content__right img:first-child{  
+    position: absolute;
+
+    top:50px;
+}
+
+.center__title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.not__margin {
+    margin-top: 0px;
+}
+
+.content__right__2 {
+    width: 50%;
+}
+
+.content__right__2 img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* =========== Блок карточек бизнеса ============ */
+
+.container__card {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 80px 0;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    position: relative;
+
+    margin-right: 30px;
+}
+
+.card:last-child {
+    margin-right: 0px;
+
+}
+
+.logo__card {
+    width: 76px;
+    height: 76px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    border-radius: 50px;
+}
+
+.logo__card img{
+}
+
+.content__card {
+    position: absolute;
+    min-height: 500px;
+
+    background-image: url('../img/Subtract.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    max-height:auto;
+
+    top: 35px;
+    left: -1.5%;
+
+    padding: 40px 0;
+
+}
+
+.title__card {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+
+    margin-top: 5px;
+}
+
+.content__card hr {
+    width: 80%;
+
+    background-color: #B4ABAB;
+    border: 2px solid #B4ABAB;
+
+    margin: 15px 20px;
+}
+
+.text__card {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 5px;
+}
+
+.container__shop__title {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: #3F3D56;
+
+    margin-bottom: 80px;
+}
+
+.container__shop {
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+
+.slider__indicators {
+    display: none;
+}
+
+.item__shop {
+    max-width: 40%;
+
+    background: linear-gradient(70.6deg, #35CC79 10.03%, rgba(52, 125, 85, 0.65) 139.7%);
+    box-shadow: 0px 0px 1.04139px rgba(0, 0, 0, 0.08), 0px 1.04139px 12.4967px rgba(0, 0, 0, 0.08);
+    border-radius: 7.28973px;
+
+    padding: 15px 30px;
+    margin-bottom: 30px;
+}
+
+.item__shop:nth-child(2n+1) {
+    margin-right: 30px;
+}
+
+
+
+.title__shop {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    color: #000000;
+}
+
+.content__shop {
+    display: flex;
+    justify-content: space-between;
+
+    overflow: hidden;
+}
+
+.item__left {    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.item__left button{ 
+    background: #FFFFFF;
+    border-radius: 100px;
+    border: 0;
+
+    transition-duration: 0.3s;
+    cursor: pointer;
+
+    padding-left: 18px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    padding-right: 14px;
+}
+
+.item__left button:hover{ 
+    background: #d4d4d4;
+
+}
+
+.item__right {    
+    position: relative;
+}
+
+#front_1 {
+    position: absolute;
+
+    left: -50px;
+    top: -75px;
+}
+
+#front_2 {
+    position: absolute;
+
+    left: -70px;
+    top: -45px;
+}
+
+#front_3 {
+    position: absolute;
+
+    top: -30px;
+    left: -45px;
+}
+
+.back_3 {
+    opacity: 0;
+}
+
+#front_4 {    
+    position: absolute;
+
+    left: -100px;
+    top: -30px;
+}
+
+.slider-arrows {
+    display: none;
+}
